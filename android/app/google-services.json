@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "561382074280",
+    "project_id": "scu-acm",
+    "storage_bucket": "scu-acm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561382074280:android:5c4272d33713ca76519f9d",
+        "android_client_info": {
+          "package_name": "com.example.acm_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561382074280-1vf71v5qggopf1dvucilkbhd53j1aafj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtybdGOkLHKEF3JFNWVKPhHroNefzjP5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561382074280-1vf71v5qggopf1dvucilkbhd53j1aafj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "561382074280-9aoocelieqf05ao91d0qrvrorvn2lile.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.acmMobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
