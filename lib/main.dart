@@ -8,6 +8,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,7 +32,10 @@ void main() async {
   router.define("/example", handler: exampleHandler);
    router.define("/login", handler: loginHandler);
   // router.notFoundHandler = homeHandler;
-  runApp(const MyApp());
+  runApp(DevicePreview(
+      enabled: true, // Toggle to enable or disable the device preview
+      builder: (context) => MyApp(),
+    ),);
 }
 final router = FluroRouter();
 
