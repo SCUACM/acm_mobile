@@ -10,6 +10,8 @@ import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:device_preview/device_preview.dart';
 
+
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
@@ -31,9 +33,9 @@ void main() async {
   router.define("/", handler: homeHandler);
   router.define("/example", handler: exampleHandler);
    router.define("/login", handler: loginHandler);
-  // router.notFoundHandler = homeHandler;
+  router.notFoundHandler = homeHandler;
   runApp(DevicePreview(
-      enabled: true, // Toggle to enable or disable the device preview
+      enabled: false, 
       builder: (context) => MyApp(),
     ),);
 }
