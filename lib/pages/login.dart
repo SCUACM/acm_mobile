@@ -1,10 +1,18 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:acm_mobile/components/gradient.dart'; 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
+=======
+import 'package:flutter/widgets.dart';
+
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+>>>>>>> parent of 0bd624e (Gradient Widget)
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -32,6 +40,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       appBar: AppBar(title: const Text("Login Page")),
       body: GradientBackgroundWidget( // Assuming this is a correctly imported custom widget
         child: Center(
@@ -63,7 +72,14 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ),
         ),
+=======
+      appBar: AppBar(
+        title: Text("Log in page")
+>>>>>>> parent of 0bd624e (Gradient Widget)
       ),
+      body: Center(
+        child: Text("Log in page!")
+      )
     );
   }
 }
