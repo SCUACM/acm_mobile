@@ -44,6 +44,11 @@ dependencies:
   fluro: ^2.0.5
   firebase_storage: ^11.6.5
   url_strategy: ^0.2.0
+<<<<<<< HEAD
+  device_preview: ^1.1.0
+  google_sign_in: ^6.2.1
+=======
+>>>>>>> parent of 0bd624e (Gradient Widget)
 
 dev_dependencies:
   flutter_test:

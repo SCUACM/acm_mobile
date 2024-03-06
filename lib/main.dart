@@ -1,12 +1,15 @@
 import 'package:acm_mobile/firebase_options.dart';
 import 'package:acm_mobile/pages/example.dart';
 import 'package:acm_mobile/pages/home.dart';
+import 'package:acm_mobile/pages/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
+
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,11 +25,23 @@ void main() async {
       handlerFunc: (BuildContext? context, Map<String, dynamic> params) {
     return const ExamplePage();
   });
-
+  Handler loginHandler = Handler(
+      handlerFunc: (BuildContext? context, Map<String, dynamic> params) {
+    return const LoginPage();
+  });
   router.define("/", handler: homeHandler);
   router.define("/example", handler: exampleHandler);
+   router.define("/login", handler: loginHandler);
+<<<<<<< HEAD
+  router.notFoundHandler = homeHandler;
+  runApp(DevicePreview(
+      enabled: false, 
+      builder: (context) => MyApp(),
+    ),);
+=======
   // router.notFoundHandler = homeHandler;
   runApp(const MyApp());
+>>>>>>> parent of 0bd624e (Gradient Widget)
 }
 final router = FluroRouter();
 
