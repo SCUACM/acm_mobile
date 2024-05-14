@@ -47,30 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDTCNXN1akZ6DEWKLGyOp2JZvAworux9jI',
-    appId: '1:561382074280:web:e3e8ca43e1a5270b519f9d',
-    messagingSenderId: '561382074280',
-    projectId: 'scu-acm',
-    authDomain: 'scu-acm.firebaseapp.com',
-    storageBucket: 'scu-acm.appspot.com',
-    measurementId: 'G-9ELQ4BE3XH',
+    apiKey: 'AIzaSyDq18kR-oYedp0N09zlcvzwARVtrnG1T8c',
+    appId: '1:984742690738:web:c0daf9450ff26403d76eab',
+    messagingSenderId: '984742690738',
+    projectId: 'scu-acm-test',
+    authDomain: 'scu-acm-test.firebaseapp.com',
+    storageBucket: 'scu-acm-test.appspot.com',
+    measurementId: 'G-VCHPRFBRNP',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBtybdGOkLHKEF3JFNWVKPhHroNefzjP5M',
-    appId: '1:561382074280:android:5c4272d33713ca76519f9d',
-    messagingSenderId: '561382074280',
-    projectId: 'scu-acm',
-    storageBucket: 'scu-acm.appspot.com',
+    apiKey: 'AIzaSyDiFXtfgodeo0bpuqJWgvxm4QdRogx9P6Q',
+    appId: '1:984742690738:android:42fba10e0294a4d4d76eab',
+    messagingSenderId: '984742690738',
+    projectId: 'scu-acm-test',
+    storageBucket: 'scu-acm-test.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBX_DEcqUuaPUWIncLfvge3oM1w5iUYwOQ',
-    appId: '1:561382074280:ios:4bb796bbda8a67b6519f9d',
-    messagingSenderId: '561382074280',
-    projectId: 'scu-acm',
-    storageBucket: 'scu-acm.appspot.com',
-    iosClientId: '561382074280-9aoocelieqf05ao91d0qrvrorvn2lile.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBStCPepiGQ7b-uxw0rjCdOkCUv8aKQNHU',
+    appId: '1:984742690738:ios:b5ebc4463c5a0ae6d76eab',
+    messagingSenderId: '984742690738',
+    projectId: 'scu-acm-test',
+    storageBucket: 'scu-acm-test.appspot.com',
     iosBundleId: 'com.example.acmMobile',
   );
+
 }
