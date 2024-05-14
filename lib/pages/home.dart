@@ -12,10 +12,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
-  
-  void updateFirebase() {
-    firestore.collection("cities").doc("new-city-id").set({"name": "Chicago"});
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,13 +20,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text("SCU ACM")
       ),
       body: Center(
-        child: Row(
-          children: [
-            Text("Welcome to the SCU ACM app!"),
-            TextButton(onPressed: updateFirebase, child: Text("Firebase test")),
-
-          ],
-        ),
+        child: Text("Welcome to the SCU ACM app!")
       )
     );
   }
