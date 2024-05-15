@@ -1,3 +1,4 @@
+import 'package:acm_mobile/test/RandomUnsplashImage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:acm_mobile/test/ScrollableEventWidget.dart';
@@ -28,10 +29,10 @@ class _HomePageState extends State<HomePage> {
                   "Welcome, Max! 👋",
                   style: TextStyle(fontSize: 24),
                   textAlign: TextAlign.left,
-                )
-            ),
+                )),
           ),
-          Expanded(child: ScrollableEventWidget()), // Use ScrollableEventWidget here
+          Expanded(child: ScrollableEventWidget()),
+          // Use ScrollableEventWidget here
         ],
       ),
     );
