@@ -1,8 +1,6 @@
-//import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-//import 'package:flutter/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:acm_mobile/test/ScrollableEventWidget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,8 +15,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("SCU ACM")),
-        body: Align(
+      appBar: AppBar(title: const Text("SCU ACM")),
+      body: Column(
+        children: [
+          Align(
             alignment: Alignment.topLeft,
             child: Padding(
                 padding: EdgeInsets.only(
@@ -28,6 +28,12 @@ class _HomePageState extends State<HomePage> {
                   "Welcome, Max! 👋",
                   style: TextStyle(fontSize: 24),
                   textAlign: TextAlign.left,
-                ))));
+                )
+            ),
+          ),
+          Expanded(child: ScrollableEventWidget()), // Use ScrollableEventWidget here
+        ],
+      ),
+    );
   }
 }
