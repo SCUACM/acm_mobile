@@ -1,7 +1,8 @@
-import 'package:acm_mobile/test/RandomUnsplashImage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:acm_mobile/test/ScrollableEventWidget.dart';
+
+import 'club_info.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,6 +20,15 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(title: const Text("SCU ACM")),
       body: Column(
         children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => club_info()),
+              );
+            },
+            child: const Text('DEBUG: Go to sample club screen'),
+          ),
           Align(
             alignment: Alignment.topLeft,
             child: Padding(
