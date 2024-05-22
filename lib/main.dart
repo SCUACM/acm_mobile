@@ -28,6 +28,7 @@ void main() async {
   // router.notFoundHandler = homeHandler;
   runApp(const MyApp());
 }
+
 final router = FluroRouter();
 
 class MyApp extends StatelessWidget {
@@ -44,10 +45,12 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(28, 85, 141, 1.0)),
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color.fromRGBO(28, 85, 141, 1.0)),
           useMaterial3: true,
         ),
-        onGenerateRoute: router.generator,      ),
+        onGenerateRoute: router.generator,
+      ),
     );
   }
 }
