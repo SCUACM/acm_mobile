@@ -39,13 +39,14 @@ class _HomePageState extends State<HomePage> {
             Column(
               children: [
                 ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => club_info()),
-                  );
-                },
-                child: const Text('DEBUG: Go to sample club screen'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => club_info()),
+                    );
+                  },
+                  child: const Text('DEBUG: Go to sample club screen'),
+                ),
                 ClubEventWidget("Full Stack Workshop", "Mon Jan 1",  "5 - 6pm",  "SCDI 1302", "flyer1.png", "ACM"),
                 ClubEventWidget("AI Project Dev", "May 22", "5:30 - 6:30 pm",  "SCDI 2306", "flyer2.png", "ACM"),
                 ClubEventWidget("ACM-W: Git Workshop", "May 22", "6:00- 7:00 pm", "Bergin 116", "flyer3.png", "ACM")
