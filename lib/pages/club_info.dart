@@ -51,7 +51,7 @@ class club_info extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: RichText(
                 text: TextSpan(
-                  text: 'Meetings Attended: ',
+                  text: 'You have attended ',
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -62,6 +62,13 @@ class club_info extends StatelessWidget {
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.blue,
+                        fontSize: 16,
+                      ),
+                    ),
+                    const TextSpan(
+                      text: ' meetings.',
+                      style: TextStyle(
+                        color: Colors.black,
                         fontSize: 16,
                       ),
                     ),
